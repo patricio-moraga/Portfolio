@@ -91,3 +91,107 @@ footer {
     background-color: #1e3d59 !important;
     color: #f4f4f9;
 }
+
+/* Estilos para la Sección de Experiencia (Timeline) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Línea vertical central */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #1e3d59; /* Azul principal */
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+/* Contenedor de cada item */
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* Puntos indicadores */
+.timeline-dot {
+    height: 15px;
+    width: 15px;
+    background-color: #ff6e40; /* Naranja de acento */
+    position: absolute;
+    top: 25px;
+    border-radius: 50%;
+    z-index: 1;
+    border: 3px solid white;
+}
+
+/* Contenido de la tarjeta */
+.timeline-content {
+    padding: 20px 30px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.timeline-date {
+    font-weight: 700;
+    color: #1e3d59;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.timeline-content ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+/* Ubicación a la izquierda */
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+/* Ubicación a la derecha */
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+/* Ajuste del punto en la línea central (izquierda) */
+.timeline-item:nth-child(odd) .timeline-dot {
+    right: -10px;
+}
+
+/* Ajuste del punto en la línea central (derecha) */
+.timeline-item:nth-child(even) .timeline-dot {
+    left: -10px;
+}
+
+/* Media queries para móvil: Poner todo en una sola columna */
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px; /* Mueve la línea al lado izquierdo */
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        left: 0 !important;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-dot, 
+    .timeline-item:nth-child(odd) .timeline-dot {
+        left: 24px;
+        margin-left: 0;
+        right: auto;
+    }
+
+    .timeline-content {
+        /* Asegura que el contenido se vea bien en móvil */
+        margin-left: 0; 
+    }
+}
