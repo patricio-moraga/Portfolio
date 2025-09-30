@@ -1,38 +1,93 @@
-/* Estilos Generales */
+/* Paleta: Azul oscuro profesional (#1e3d59) y Naranja vibrante (#ff6e40) */
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa; /* Color de fondo claro */
+    /* Fuente moderna y legible */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #f4f4f9; /* Fondo gris claro */
+    color: #333;
 }
 
-/* Estilos de la Barra de Navegación */
-.navbar-brand {
+/* Barra de Navegación */
+.navbar {
+    background-color: #1e3d59 !important; /* Azul oscuro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand, .nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #ff6e40 !important; /* Acento naranja al pasar el mouse */
+}
+
+/* Títulos y Encabezados */
+h1, h2, h5 {
+    color: #1e3d59;
     font-weight: 700;
 }
 
-/* Estilos de la Sección Perfil (Hero) */
+/* Sección Perfil (Hero) */
 #perfil {
-    background-color: #ffffff !important;
-    border-left: 5px solid #007bff; /* Color primario de Bootstrap (azul) */
+    background-color: #ffffff;
+    border-top: 5px solid #ff6e40; /* Línea de acento naranja */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 60px !important;
+    margin-bottom: 50px;
 }
 
-/* Estilos de las Tarjetas de Experiencia */
+.btn-primary {
+    background-color: #ff6e40;
+    border-color: #ff6e40;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e55a2d; /* Tono más oscuro al pasar el mouse */
+    border-color: #e55a2d;
+}
+
+/* Sección Experiencia - Tarjetas (Timeline Look) */
 .card {
-    border: none;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    border: 1px solid #ddd;
+    border-left: 5px solid #1e3d59; /* Línea de estilo timeline */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-bottom: 25px;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px); /* Pequeño levantamiento al pasar el mouse */
 }
 
 .card-title {
-    color: #007bff; /* Color para títulos importantes */
-    font-weight: 600;
+    color: #ff6e40; /* Título de la posición en naranja */
+    font-size: 1.35rem;
 }
 
-/* Estilos de las Habilidades */
-#habilidades ul {
-    padding-left: 20px;
+/* Habilidades - Barras de Progreso */
+.skill-bar-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #1e3d59;
+}
+
+.progress {
+    height: 15px;
+    margin-bottom: 20px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    background-color: #ff6e40; /* Relleno naranja de las barras */
+}
+
+/* Footer */
+footer {
+    background-color: #1e3d59 !important;
+    color: #f4f4f9;
 }
