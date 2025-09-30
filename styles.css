@@ -1,0 +1,38 @@
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Color de fondo claro */
+}
+
+/* Estilos de la Barra de Navegación */
+.navbar-brand {
+    font-weight: 700;
+}
+
+/* Estilos de la Sección Perfil (Hero) */
+#perfil {
+    background-color: #ffffff !important;
+    border-left: 5px solid #007bff; /* Color primario de Bootstrap (azul) */
+}
+
+/* Estilos de las Tarjetas de Experiencia */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #007bff; /* Color para títulos importantes */
+    font-weight: 600;
+}
+
+/* Estilos de las Habilidades */
+#habilidades ul {
+    padding-left: 20px;
+}
