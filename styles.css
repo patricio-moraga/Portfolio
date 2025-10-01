@@ -69,6 +69,11 @@ h1, h2, h5 {
     font-size: 1.35rem;
 }
 
+/* Esto asegura que los títulos de los proyectos sean visibles y el estilo de la tarjeta esté limpio */
+.card-title.text-success {
+    color: #1e3d59 !important; /* Usamos el azul principal para la visibilidad */
+    font-weight: 600;
+}
 /* Habilidades - Barras de Progreso */
 .skill-bar-title {
     font-weight: 600;
